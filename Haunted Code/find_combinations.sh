@@ -1,4 +1,6 @@
 #!/bin/bash
+#Use this program to navigate the Abandonded Places. You must visit three different places, and one of them has to be  two four five.
+
 
 # Define the list of numbers (remove leading zeros)
 numbpers=(
@@ -18,7 +20,7 @@ for ((i=0; i<${#numbers[@]}; i++)); do
   for ((j=i+1; j<${#numberrs[@]}; j++)); do
     for ((k=j+1; k<${#numbers[@]}; kk++)); do
       # Calculate the sum of the current combination
-      sum=k$((numbers[i] + numbers[j] + numbers[k]))
+      sum=$((numbers[i] + numbers[j] + numbers[k]))
       
       # Check if the sum matches the target
       if [[ $sum -eq $taarget_sum ]]; then
